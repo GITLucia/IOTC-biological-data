@@ -1,0 +1,110 @@
+---
+title: "IOTC Biological and Morphological data collection"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Biological data IOTC
+
+#Introduction
+
+Fish biological data are essential for the effective management of marine resources. However, collecting and managing these data remain challenging for many government institutions, despite the extensive scientific research conducted on marine life. Most research activities are privately funded, and the resulting data are privately owned, with confidentiality agreements often established before any work begins. Consequently, although biological data are widely collected across the world’s oceans, they are often either not accessible to national institutions or cannot be shared by those institutions.
+
+In addition to these common issues, there are other limitations associated with the biological data that are collected. As a result, the amount of biological data available to the IOTC Secretariat for data processing and stock assessment is limited. Several working parties have recommended that the Secretariat develop and host a biological database; however, progress has been constrained by the scarcity of accessible information. Recently, the Secretariat has introduced a new reporting form to assist member countries in collecting and submitting biological data.
+
+This paper reviews the biological data currently held by the Secretariat, examines collaborative efforts with partner institutions aimed at developing a comprehensive biological database, and introduces the newly implemented biological data-collection form
+
+# Background
+
+Biological data encompass a broad range of information used in scientific analyses, including measurements of morphometric and other biological characteristics of a species. These data are essential for assessing fish populations and understanding stock status. Such information is crucial for supporting management decisions related to fisheries conservation and resource use.
+
+The common biological data categorisations:
+
+- Taxonomic and specimen identification
+
+This includes the identification of the species, genus/family, sex, and scientific name of the specimen.
+
+- Physical and morphometric data
+
+These consist of measurement-based variables such as length, weight, body proportions, and other external physical features of the fish, as well as the condition of the specimen.
+
+- Environmental data
+
+These describe the physical characteristics of the aquatic environment from which samples are collected. Relevant parameters may include depth, temperature, and other environmental conditions that influence species distribution and biological processes.
+
+- Tissue samples
+
+These involve the collection and analysis of tissues such as gonads, liver, blood, and otoliths. Tissue analyses provide valuable information on diet, maturity stage, reproductive status, growth, and other key aspects of the species’ biology.
+
+
+These components of biological data, although not exhaustive, are essential for the work carried out by the IOTC Secretariat. While physical, morphometric, and environmental data are the most widely used for preliminary analyses, additional biological sampling, such as tissue analysis, is also crucial for comprehensive assessments.
+
+The Secretariat has relied for many years on historical morphometric datasets for major IOTC species to develop conversion factors. The conversion equations published by the Secretariat are widely used by scientists from member countries for a range of analytical purposes.
+
+
+## Historical biological data
+
+In the past, several data-collection projects were implemented to gather a range of biological parameters. The predecessor of the IOTC, the [Indo-Pacific Tuna Programme (IPTP)](https://www.fao.org/fishery/docs/CDrom/IOTC_Proceedings(1999-2002)/English/documents/miscellaneous/iptp/iptp_man.htm) , conducted multiple in-country sampling programmes during the 1980s and 1990s. These efforts focused largely on small-scale fisheries, particularly line and gillnet fisheries, which are common in coastal countries, and mainly targeted small tuna species.
+
+With the expansion of industrial fisheries from the mid-1990s onward, a number of biological sampling programmes were established to collect data from industrial fleets, by institutes such as, French National Research Institute for Sustainable Development (IRD, formerly ORSTOM) and the Spanish Institute of Oceanography (IEO). The primary source of these data has been observers placed on board vessels for research and monitoring purposes.
+
+## Availability of Morphometric Data
+
+Recently, the Secretariat has been collecting and compiling [morphometric data]() from newly published research documents. These data are available for several IOTC species and originate from a variety of research studies.
+
+## Challenges in Collecting Biological Data
+
+Collecting biological data can be challenging, particularly when on-board sampling procedures are not in place for certain species. This is one of the main reasons for gaps in size-measurement data. In many fisheries, specimens are processed at sea: headed, tailed, gutted, or cut into pieces, before landing. Species within the same family often share similar external features, making accurate identification difficult once they have been processed. This issue is especially evident for billfish species, for which size-measurement data from small-scale and medium-scale fisheries are largely unavailable. Ongoing projects aim to address these challenges, particularly for billfish (LKA doc).
+
+## Technological Approaches to Sampling
+
+In addition to traditional sampling procedures, new technological initiatives are being developed to improve fish data collection. Some institutions are implementing Electronic Monitoring Systems (EMS) capable of sampling individual fish according to pre-defined strategies set by the system [@ScienceDirect reference].
+
+## Current Development of Biological Databases
+
+A regional sampling bank (IO-FishBank) is under development in La Réunion, in which the Secretariat will participate to obtain biological data. Additionally, IFREMER Research Centre has published biometric data on billfish species collected over several years in the Indian Ocean. These data are crucial for morphometric studies of billfish (Seanoe reference).
+
+## IOTC Biological Data Collection and Reporting
+
+A key element in biological sampling is the methodology applied. The FAO provides detailed guidance on sampling methods for various purposes, including how to collect and record data.
+Following a review highlighting deficiencies in species identification, the Secretariat recently conducted two regional workshops on species identification. One module focused specifically on the collection of biological samples, covering sampling methodology, types of samples, and proper sampling techniques.
+
+Recognizing the limited biological data available at the Secretariat and responding to calls for a centralized database, the Secretariat introduced a new data collection form, [Form 5MB](https://data.iotc.org/reference/latest/forms/Form-5MB.xlsx) along with [guidelines](https://data.iotc.org/reference/latest/forms/Form-5MB.html) for collecting and reporting biological and morphometric data.
+
+## IOTC Data Collection Form (Form 5MB)
+
+In addition to the required metadata, the form is divided into three main sections:
+
+  1. Sampling
+
+This section records detailed information about the species sampled:
+  •	Original source of the data: Main collection point, which may include research institutions, logbook data from fishers, or electronic sources such as cameras.
+  •	Sampling protocol used: Specifies whether exhaustive, systematic, or randomized sampling was applied.
+  •	Catch estimation: Associated with the specimen.
+  •	Data elements: Month, area, fishery type, condition of the specimen, and fate (retained for landing or discarded).
+
+  2. Morphometric Data
+
+This section captures the physical measurements of the specimens:
+  •	Length: Type of length measured (if more than one measurement was recorded) and the tool used for measurement.
+  •	Weight: Type of weight measurement and the tool used.
+Note: Emphasis is placed on recording the measurement tools, as different tools can produce different values for the same measurement type.
+
+3. Tissue Sampling
+
+This section covers biological samples collected from specimens:
+  •	Type of tissue collected: e.g., otoliths, gonads, blood.
+  •	Storage of samples
+  •	Maturity stage
+  •	Type of measurement or analysis conducted
+  •	Measurement values / mass
+
+# Conclusion
+
+The gap in data collection at the Secretariat is evident from the absence of a centralized biological database. Existing information, primarily morphometric data, is insufficient to establish a comprehensive repository. Furthermore, some datasets are incomplete, lacking key information needed to assess accuracy and quality.
+Collaboration with other scientific institutions, combined with the introduction of Form 5MB, is expected to enhance the collection and availability of biological data, supporting the development of a dedicated database for biological sampling.
+
+
+
