@@ -1,0 +1,9 @@
+# Appendix I: List of morphometric conversion factors available at the Secretariat {#Morp}
+
+```{r MorphLW, echo=FALSE, tab.id = "MorphLW", tab.cap = "Length-weight conversion factors collected by the Secretariat"}
+LW_PARAMS_FT_PW
+```
+
+```{r MorphLL, echo=FALSE, tab.id = "MorphLL", tab.cap = "Length-length conversion factors collected by the Secretariat"}
+LL_PARAMS_FT_LI
+```

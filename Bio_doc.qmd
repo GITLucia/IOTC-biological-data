@@ -1,7 +1,15 @@
 ---
 title: "IOTC Biological and Morphological data collection"
-format: html
-editor: visual
+output:
+  word_document2:
+    #reference_docx: "../templates/doc_template.docx"
+#reference_num: true
+
+
+#bibliography: BIO.bib
+link-citations: true
+---
+
 ---
 
 ## Quarto
@@ -22,27 +30,25 @@ Biological data encompass a broad range of information used in scientific analys
 
 The common biological data categorisations:
 
-- Taxonomic and specimen identification
+-   Taxonomic and specimen identification
 
 This includes the identification of the species, genus/family, sex, and scientific name of the specimen.
 
-- Physical and morphometric data
+-   Physical and morphometric data
 
 These consist of measurement-based variables such as length, weight, body proportions, and other external physical features of the fish, as well as the condition of the specimen.
 
-- Environmental data
+-   Environmental data
 
 These describe the physical characteristics of the aquatic environment from which samples are collected. Relevant parameters may include depth, temperature, and other environmental conditions that influence species distribution and biological processes.
 
-- Tissue samples
+-   Tissue samples
 
 These involve the collection and analysis of tissues such as gonads, liver, blood, and otoliths. Tissue analyses provide valuable information on diet, maturity stage, reproductive status, growth, and other key aspects of the species’ biology.
-
 
 These components of biological data, although not exhaustive, are essential for the work carried out by the IOTC Secretariat. While physical, morphometric, and environmental data are the most widely used for preliminary analyses, additional biological sampling, such as tissue analysis, is also crucial for comprehensive assessments.
 
 The Secretariat has relied for many years on historical morphometric datasets for major IOTC species to develop conversion factors. The conversion equations published by the Secretariat are widely used by scientists from member countries for a range of analytical purposes.
-
 
 ## Historical biological data
 
@@ -68,8 +74,7 @@ A regional sampling bank (IO-FishBank) is under development in La Réunion, in w
 
 ## IOTC Biological Data Collection and Reporting
 
-A key element in biological sampling is the methodology applied. The FAO provides detailed guidance on sampling methods for various purposes, including how to collect and record data.
-Following a review highlighting deficiencies in species identification, the Secretariat recently conducted two regional workshops on species identification. One module focused specifically on the collection of biological samples, covering sampling methodology, types of samples, and proper sampling techniques.
+A key element in biological sampling is the methodology applied. The FAO provides detailed guidance on sampling methods for various purposes, including how to collect and record data. Following a review highlighting deficiencies in species identification, the Secretariat recently conducted two regional workshops on species identification. One module focused specifically on the collection of biological samples, covering sampling methodology, types of samples, and proper sampling techniques.
 
 Recognizing the limited biological data available at the Secretariat and responding to calls for a centralized database, the Secretariat introduced a new data collection form, [Form 5MB](https://data.iotc.org/reference/latest/forms/Form-5MB.xlsx) along with [guidelines](https://data.iotc.org/reference/latest/forms/Form-5MB.html) for collecting and reporting biological and morphometric data.
 
@@ -77,34 +82,18 @@ Recognizing the limited biological data available at the Secretariat and respond
 
 In addition to the required metadata, the form is divided into three main sections:
 
-  1. Sampling
+1.  Sampling
 
-This section records detailed information about the species sampled:
-  •	Original source of the data: Main collection point, which may include research institutions, logbook data from fishers, or electronic sources such as cameras.
-  •	Sampling protocol used: Specifies whether exhaustive, systematic, or randomized sampling was applied.
-  •	Catch estimation: Associated with the specimen.
-  •	Data elements: Month, area, fishery type, condition of the specimen, and fate (retained for landing or discarded).
+This section records detailed information about the species sampled: • Original source of the data: Main collection point, which may include research institutions, logbook data from fishers, or electronic sources such as cameras. • Sampling protocol used: Specifies whether exhaustive, systematic, or randomized sampling was applied. • Catch estimation: Associated with the specimen. • Data elements: Month, area, fishery type, condition of the specimen, and fate (retained for landing or discarded).
 
-  2. Morphometric Data
+2.  Morphometric Data
 
-This section captures the physical measurements of the specimens:
-  •	Length: Type of length measured (if more than one measurement was recorded) and the tool used for measurement.
-  •	Weight: Type of weight measurement and the tool used.
-Note: Emphasis is placed on recording the measurement tools, as different tools can produce different values for the same measurement type.
+This section captures the physical measurements of the specimens: • Length: Type of length measured (if more than one measurement was recorded) and the tool used for measurement. • Weight: Type of weight measurement and the tool used. Note: Emphasis is placed on recording the measurement tools, as different tools can produce different values for the same measurement type.
 
-3. Tissue Sampling
+3.  Tissue Sampling
 
-This section covers biological samples collected from specimens:
-  •	Type of tissue collected: e.g., otoliths, gonads, blood.
-  •	Storage of samples
-  •	Maturity stage
-  •	Type of measurement or analysis conducted
-  •	Measurement values / mass
+This section covers biological samples collected from specimens: • Type of tissue collected: e.g., otoliths, gonads, blood. • Storage of samples • Maturity stage • Type of measurement or analysis conducted • Measurement values / mass
 
 # Conclusion
 
-The gap in data collection at the Secretariat is evident from the absence of a centralized biological database. Existing information, primarily morphometric data, is insufficient to establish a comprehensive repository. Furthermore, some datasets are incomplete, lacking key information needed to assess accuracy and quality.
-Collaboration with other scientific institutions, combined with the introduction of Form 5MB, is expected to enhance the collection and availability of biological data, supporting the development of a dedicated database for biological sampling.
-
-
-
+The gap in data collection at the Secretariat is evident from the absence of a centralized biological database. Existing information, primarily morphometric data, is insufficient to establish a comprehensive repository. Furthermore, some datasets are incomplete, lacking key information needed to assess accuracy and quality. Collaboration with other scientific institutions, combined with the introduction of Form 5MB, is expected to enhance the collection and availability of biological data, supporting the development of a dedicated database for biological sampling.

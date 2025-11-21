@@ -1,0 +1,34 @@
+---
+title: "IOTC biological data"
+author: "Author: [IOTC Secretariat](mailto:IOTC-Secretariat@fao.org)" 
+output:
+  word_document2:
+    reference_docx: "../templates/doc_template.docx"
+reference_num: true
+
+csl: iotc.csl
+bibliography: WPDCS.bib
+link-citations: yes
+---
+
+```{r general_options, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, tidy.opts=list(width.cutoff = 60), tidy = TRUE, size = "small", tab.cap.style = "Table Caption", fig.cap.style = "Caption text")
+```
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      tab.cap.pre = "Tab. ", 
+                      tab.cap.sep = ". ", 
+                      tab.cap.style = "Table Caption", 
+                      #tab.cap.fp_text = officer::fp_text_lite(italic = TRUE, bold = TRUE), 
+                      fig.cap = TRUE, 
+                      fig.cap.pre = "Fig. ", 
+                      fig.cap.sep = ". ", 
+                      fig.cap.style = "Caption label",
+                      dpi = 300
+)
+```
+
+```{r child = "Bio_doc.qmd"}
+```
+

@@ -1,0 +1,306 @@
+---
+title: "Report on IOTC data collection and statistics"
+subtitle: "20^th^ session of the IOTC Working Party on Data Collection and Statistics - November 26^th^ - 30^th^ 2024"
+author: "[IOTC Secretariat](mailto:IOTC-Secretariat@fao.org)"
+csl: iotc.csl
+bibliography: WPDCS.bib
+link-citations: yes
+---
+
+```{r general_options,echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, tidy.opts = list(width.cutoff = 60), tidy = TRUE, size = "small", fig.width = 12, fig.height = 6.75)
+#knit_hooks$set(inline = function(x) {prettyNum(x, big.mark = ",")})
+```
+
+## purpose
+
+To provide the IOTC Working Party on Data Collection and Statistics (WPDCS) with an overview of the datasets managed at the IOTC Secretariat, including information on their coverage, timeliness of submissions, and reporting quality assessment.
+
+---
+
+# Terminology & Definitions
+
+--- 
+
+## 16 iotc tuna and tuna-like species
+
+```{r IOTCSpecies}
+include_graphics("../outputs/charts/DEFINITIONS/IOTC_SPECIES.png")
+```
+
+<!-- ::: notes -->
+<!-- Special case of southern bluefin tuna (_Thunnus maccoyii_) under CCSBT management -->
+<!-- Request to add shortbill spearfish (_Tetrapturus angustirostris_) -->
+<!-- Some seerfish species not under IOTC management (small catches) -->
+<!-- ::: -->
+
+---
+
+## 18 mobulid rays and pelagic shark species
+
+```{r ElasmobranchSpecies}
+include_graphics("../outputs/charts/DEFINITIONS/ELASMOBRANCH_SPECIES.png")
+```
+
+<!-- ::: notes -->
+<!-- Common tresher shark (_Alopias vulpinus_) not included (Romanov 2015) -->
+<!-- Only 2 (RMB and RMM) out of the 7 rays reported but aggregate code 'MAN' used in many cases -->
+<!-- ::: -->
+
+--- 
+
+## iotc vessel types ([Res. 19/04](https://www.iotc.org/cmm/resolution-1904-concerning-iotc-record-vessels-authorised-operate-iotc-area-competence))
+
+- **Authorised fishing vessels**: fishing vessels of 24 m overall length and over, and under 24 meters if they fish outside national EEZ have to be recorded in the IOTC Record of Authorised Vessels (RAV) -- **industrial**
+
+- **Coastal fishing vessels**: which are vessels of less than 24 m length overall that only operate within national EEZs and do not require to be recorded in the RAV -- **artisanal**.
+
+--- 
+
+## iotc fisheries categories ([Res. 15/02](https://www.iotc.org/cmm/resolution-1502-mandatory-statistical-reporting-requirements-iotc-contracting-parties-and))
+
+- **Longline fisheries**: fisheries undertaken by vessels in the RAV that use longline gear;
+
+- **Surface fisheries**: all fisheries undertaken by vessels in the RAV other than longline fisheries, in particular purse seine, pole-and-line, gillnet, handline, and trolling fisheries;
+
+- **Coastal fisheries**: fisheries other than longline or surface, as defined above, also called **artisanal fisheries**.
+
+---
+
+# Reporting Requirements & Forms
+
+--- 
+
+## datasets to report depend on species and gears
+
+```{r ReportingRequirementsChart}
+include_graphics("../inputs/charts/IOTC_data_requirements_2024.png")
+```
+
+---
+
+## iotc reporting forms 
+
+```{r DataReportingRequirementsTable}
+include_graphics("../outputs/charts/DEFINITIONS/REPORTING_TABLE.png")
+```
+
+---
+
+## Streamlining the reporting process
+
+- Online reporting guidelines to define and decribe the data reporting requirements - [IOTC Reporting guidelines](https://data.iotc.org/reference/latest/guidelines/)
+- [IOTC reporting form pages](https://data.iotc.org/reference/latest/forms/)
+- Online validation tools
+- [Reference data catalogue](https://iotc.org/data/reference) 
+- [Fisheries identification wizard](https://iotc.org/data/fisheries/wizard)
+- of all CPCs that attended the workshops - four could not complete the new forms
+
+
+## assessing reporting quality
+
+```{r ReportingQualityKey}
+include_graphics("../outputs/charts/DEFINITIONS/QUALITY_SCORE_KEY.png")
+```
+
+---
+
+# Data availability & Timeliness
+
+---
+
+## iotc submission cycle
+
+The deadline of submission for the retained catch (RC), catch and effort (CE), and size-frequency (SF) data is the **30^th^ of June** every year, with the possibility of submitting final versions of the data sets for longline fisheries until the **30^th^ of December**.
+
+Late reporting **compromises the validation and verification of data** by the IOTC Secretariat, especially when these are submitted close to, or during, Working Party meetings devoted to the stock assessment of IOTC species.
+
+---
+
+## `r TIMELINESS_TABLE[DATASET_CODE == "RC"  & REPORTING_YEAR %in% 2024, round(mean(NOT_REPORTED))]`% of retained catches not reported for `r YL`
+
+- `r nrow(AVL_YL[NR == "TRUE"])` CPCs did not report any datasets, Oman, Somalia, Sudan, and Yemen:  one country data extracted from their online published report, two countries previous year’s catch data; one no data source
+- Data for non-IOTC members delayed by 1 year rely of FAO published data: Bahrain, Djibouti, Egypt, Jordan, Kuwait, Myanmar, Saudi Arabia, and Timor Leste
+
+---
+
+## Timeliness of retained catch
+
+```{r TimelinessBarplotRC}
+include_graphics("../outputs/charts/TIMELINESS/RC_TIMELINESS_BARPLOT.png")
+```
+
+---
+
+## `r TIMELINESS_TABLE[DATASET_CODE == "CE"  & REPORTING_YEAR %in% 2024, round(mean(NOT_REPORTED))]`% of catch/efforts not reported for 2024;
+
+```{r TimelinessBarplotCE}
+include_graphics("../outputs/charts/TIMELINESS/CE_TIMELINESS_BARPLOT.png")
+```
+
+---
+
+## `r TIMELINESS_TABLE[DATASET_CODE == "SF"  & REPORTING_YEAR %in% 2024, round(mean(NOT_REPORTED))]`% size frequency data overall not reported
+
+
+```{r TimelinessBarplotSF}
+include_graphics("../outputs/charts/TIMELINESS/SF_TIMELINESS_BARPLOT.png")
+```
+
+---
+
+# Overview of data reporting status
+
+---
+
+## Availability of tropical tunas
+
+```{r Qualitytropical}
+include_graphics("../outputs/charts/QUALITY/DATA_QUALITY_STATUS_YL_TROP.png")
+```
+
+--- 
+
+## Availability of temperate tunas
+
+```{r QualityTemperates}
+include_graphics("../outputs/charts/QUALITY/DATA_QUALITY_STATUS_YL_TEMP.png")
+```
+
+--- 
+
+## Availability of billfish
+
+```{r QualityBill}
+include_graphics("../outputs/charts/QUALITY/DATA_QUALITY_STATUS_YL_BILL.png")
+```
+
+--- 
+
+## Availability of neritic tunas and seerfish
+
+```{r QualityNeritics}
+include_graphics("../outputs/charts/QUALITY/DATA_QUALITY_STATUS_YL_NERI.png")
+```
+
+--- 
+
+## Availability of pelagic sharks and rays
+
+```{r QualityElasmobranchs}
+include_graphics("../outputs/charts/QUALITY/DATA_QUALITY_STATUS_YL_SHARKS.png")
+```
+
+---
+
+## Availabilty of discarded data by fishery and fate
+
+```{r DiscardSpe}
+include_graphics("../outputs/charts/DISCARDS/DISCARDS_FG_SPCAT_YL_LLGIPS_TREEMAP.png")
+```
+
+---
+
+## FAD-related data
+
+- New reporting forms: 3DA and 3AA
+- Not fully complied by all CPCs with purse seine fisheries
+- Missing information for some fields or not completed accordingly 
+
+---
+
+```{r FADtype}
+include_graphics("../outputs/charts/DA_CHART.png")
+```
+
+---
+
+```{r FADPresent}
+include_graphics("../outputs/charts/DA_POSITION_BOUY_CHART.png")
+```
+
+---
+
+## Fishing craft statistics
+
+- Challenges meeting the requirement of new fishery codes
+  (i) many small-scale fisheries do not target specific species- multi-species; 
+  (ii) the same vessels may target different species at various times depending on the season; 
+  (iii) vessels may employ multiple gear types on the same trip; and 
+  (iv) the same vessels may operate in both the NJA and the ABNJ areas.
+  
+-Fishing crafts statistics reported by several CPCs for the coastal fisheries, but all information from NR
+
+--- 
+
+- Data related to boat frame surveys conducted by CPCs (~4 years) for several purposes:
+  (i) to maintain up-to-date information on the fishing boats that are operating
+  (ii) using updating data on active vessels for estimating catch
+  (iii) to gather socio-economic information on the population engaged in the fishery. 
+
+- Provides information on technological development in the small-scale fisheries
+
+- National report data are aggregated: by fisheries; size categories; discrepancies with reported data
+
+---
+
+```{r FCMech}
+include_graphics("../outputs/charts/FISHING_CRAFTS/FC_mech_BARCHART.png")
+```
+
+---
+
+```{r FCGEARloa}
+include_graphics("../outputs/charts/FISHING_CRAFTS/FC_gear_size_BARCHART_loa.png")
+```
+
+---
+
+```{r FCGEARgt}
+include_graphics("../outputs/charts/FISHING_CRAFTS/FC_gear_size_BARCHART_gt.png")
+```
+
+---
+
+## Socio-economic data for the WPSE
+
+- Requests from WPSE01 
+  - *A document containing suggested indicators will be distributed by the Secretariat for CPC review and comment.* - collaboration with WCPFC/FFA
+- Import prices of tuna
+- Crude oil prices
+- Trade statistics (imports, exports)
+- Contribution of fisheries to the GDP
+
+--- 
+
+## Data issues and proposed actions
+
+```{r Issues}
+ISSUES_summary_tab
+```
+
+---
+
+## Thank you for your attention!
+
+
+
+
+
+<!-- ---  -->
+
+<!-- ## References -->
+
+<!-- ---  -->
+
+<!-- # Appendices -->
+
+<!-- ---  -->
+
+<!-- - **Socio-economic data** [[Form 7PR](https://www.iotc.org/sites/default/files/documents/data/Form_7PR.zip)]: average prices of fish per type of fish product (preservation, processing), weight units, type of currency, month and market; -->
+
+<!-- - **Biological data**:  parameters of morphometric relationships (i.e., length-length and length-weight equations) and conversion factors; -->
+
+<!-- - **Tagging data**: all information from the large-scale Indian Ocean Tuna Tagging Programme including more than 218,000 tags deployed on tropical tunas between 1990 and 2009 -->
+
+<!-- --- -->
